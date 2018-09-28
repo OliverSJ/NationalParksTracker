@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F1314142157D5C4006A05CB /* nationalparks.db in Resources */ = {isa = PBXBuildFile; fileRef = 8F1314132157D5C4006A05CB /* nationalparks.db */; };
+		8F13149D215B14D30009BB56 /* StatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F13149C215B14D30009BB56 /* StatsController.swift */; };
+		8F40166F2138DB69004F87DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F40166E2138DB69004F87DD /* AppDelegate.swift */; };
+		8F4016712138DB69004F87DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4016702138DB69004F87DD /* ViewController.swift */; };
+		8F4016742138DB69004F87DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F4016722138DB69004F87DD /* Main.storyboard */; };
+		8F4016772138DB69004F87DD /* National_Parks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F4016752138DB69004F87DD /* National_Parks.xcdatamodeld */; };
+		8F4016792138DB6B004F87DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F4016782138DB6B004F87DD /* Assets.xcassets */; };
+		8F40167C2138DB6B004F87DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F40167A2138DB6B004F87DD /* LaunchScreen.storyboard */; };
+		8F4016872138DB6B004F87DD /* National_ParksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4016862138DB6B004F87DD /* National_ParksTests.swift */; };
+		8F4016922138DB6B004F87DD /* National_ParksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4016912138DB6B004F87DD /* National_ParksUITests.swift */; };
+		8F4017FA214F298500ADD57F /* ParksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4017F9214F298500ADD57F /* ParksController.swift */; };
+		8F4017FC214F2B6B00ADD57F /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4017FB214F2B6B00ADD57F /* Park.swift */; };
+		8F4017FE2150958700ADD57F /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4017FD2150958700ADD57F /* Stats.swift */; };
+		8F4018CC2156910800ADD57F /* GRDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4018C5215679BE00ADD57F /* GRDB.framework */; };
+		8F4018CD2156910800ADD57F /* GRDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4018C5215679BE00ADD57F /* GRDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F4016832138DB6B004F87DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F4016632138DB69004F87DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F40166A2138DB69004F87DD;
+			remoteInfo = "National Parks";
+		};
+		8F40168E2138DB6B004F87DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F4016632138DB69004F87DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F40166A2138DB69004F87DD;
+			remoteInfo = "National Parks";
+		};
+		8F4018BA215679BE00ADD57F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F4018AE215679BE00ADD57F /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC3773F319C8CBB3004FCF85;
+			remoteInfo = GRDBOSX;
+		};
+		8F4018BC215679BE00ADD57F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F4018AE215679BE00ADD57F /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56E5D7F91B4D422D00430942;
+			remoteInfo = GRDBOSXTests;
+		};
+		8F4018BE215679BE00ADD57F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F4018AE215679BE00ADD57F /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 560C981A1C0E22D300BF8471;
+			remoteInfo = GRDBOSXPerformanceTests;
+		};
+		8F4018C0215679BE00ADD57F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F4018AE215679BE00ADD57F /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56439B501F4CA1DC0066043F;
+			remoteInfo = GRDBOSXPerformanceComparisonTests;
+		};
+		8F4018C2215679BE00ADD57F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F4018AE215679BE00ADD57F /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56553C181C3E906C00522B5C;
+			remoteInfo = GRDBOSXCrashTests;
+		};
+		8F4018C4215679BE00ADD57F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F4018AE215679BE00ADD57F /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56E5D7CA1B4D3FED00430942;
+			remoteInfo = GRDBiOS;
+		};
+		8F4018C6215679BE00ADD57F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F4018AE215679BE00ADD57F /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56E5D7D31B4D3FEE00430942;
+			remoteInfo = GRDBiOSTests;
+		};
+		8F4018C8215679BE00ADD57F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F4018AE215679BE00ADD57F /* GRDB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 565490A01D5A4798005622CB;
+			remoteInfo = GRDBWatchOS;
+		};
+		8F4018CA215690F800ADD57F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F4018AE215679BE00ADD57F /* GRDB.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 56E5D7C91B4D3FED00430942;
+			remoteInfo = GRDBiOS;
+		};
+		8F4018CE2156910800ADD57F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F4018AE215679BE00ADD57F /* GRDB.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 56E5D7C91B4D3FED00430942;
+			remoteInfo = GRDBiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F4018D02156910900ADD57F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8F4018CD2156910800ADD57F /* GRDB.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8F1314132157D5C4006A05CB /* nationalparks.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = nationalparks.db; sourceTree = "<group>"; };
+		8F13149C215B14D30009BB56 /* StatsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsController.swift; sourceTree = "<group>"; };
+		8F40166B2138DB69004F87DD /* National Parks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "National Parks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F40166E2138DB69004F87DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F4016702138DB69004F87DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F4016732138DB69004F87DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F4016762138DB69004F87DD /* National_Parks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = National_Parks.xcdatamodel; sourceTree = "<group>"; };
+		8F4016782138DB6B004F87DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F40167B2138DB6B004F87DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F40167D2138DB6B004F87DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F4016822138DB6B004F87DD /* National ParksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "National ParksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F4016862138DB6B004F87DD /* National_ParksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = National_ParksTests.swift; sourceTree = "<group>"; };
+		8F4016882138DB6B004F87DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F40168D2138DB6B004F87DD /* National ParksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "National ParksUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F4016912138DB6B004F87DD /* National_ParksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = National_ParksUITests.swift; sourceTree = "<group>"; };
+		8F4016932138DB6B004F87DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F4017F9214F298500ADD57F /* ParksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksController.swift; sourceTree = "<group>"; };
+		8F4017FB214F2B6B00ADD57F /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		8F4017FD2150958700ADD57F /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		8F4018AE215679BE00ADD57F /* GRDB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GRDB.xcodeproj; path = "../../Downloads/GRDB.swift-3.3.0/GRDB.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F4016682138DB69004F87DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F4018CC2156910800ADD57F /* GRDB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F40167F2138DB6B004F87DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F40168A2138DB6B004F87DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F4016622138DB69004F87DD = {
+			isa = PBXGroup;
+			children = (
+				8F4018AE215679BE00ADD57F /* GRDB.xcodeproj */,
+				8F40166D2138DB69004F87DD /* National Parks */,
+				8F4016852138DB6B004F87DD /* National ParksTests */,
+				8F4016902138DB6B004F87DD /* National ParksUITests */,
+				8F40166C2138DB69004F87DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F40166C2138DB69004F87DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F40166B2138DB69004F87DD /* National Parks.app */,
+				8F4016822138DB6B004F87DD /* National ParksTests.xctest */,
+				8F40168D2138DB6B004F87DD /* National ParksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F40166D2138DB69004F87DD /* National Parks */ = {
+			isa = PBXGroup;
+			children = (
+				8F1314132157D5C4006A05CB /* nationalparks.db */,
+				8F40166E2138DB69004F87DD /* AppDelegate.swift */,
+				8F4016722138DB69004F87DD /* Main.storyboard */,
+				8F4016782138DB6B004F87DD /* Assets.xcassets */,
+				8F40167A2138DB6B004F87DD /* LaunchScreen.storyboard */,
+				8F40167D2138DB6B004F87DD /* Info.plist */,
+				8F4016752138DB69004F87DD /* National_Parks.xcdatamodeld */,
+				8F4017FB214F2B6B00ADD57F /* Park.swift */,
+				8F4017FD2150958700ADD57F /* Stats.swift */,
+				8F4016702138DB69004F87DD /* ViewController.swift */,
+				8F4017F9214F298500ADD57F /* ParksController.swift */,
+				8F13149C215B14D30009BB56 /* StatsController.swift */,
+			);
+			path = "National Parks";
+			sourceTree = "<group>";
+		};
+		8F4016852138DB6B004F87DD /* National ParksTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F4016862138DB6B004F87DD /* National_ParksTests.swift */,
+				8F4016882138DB6B004F87DD /* Info.plist */,
+			);
+			path = "National ParksTests";
+			sourceTree = "<group>";
+		};
+		8F4016902138DB6B004F87DD /* National ParksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F4016912138DB6B004F87DD /* National_ParksUITests.swift */,
+				8F4016932138DB6B004F87DD /* Info.plist */,
+			);
+			path = "National ParksUITests";
+			sourceTree = "<group>";
+		};
+		8F4018AF215679BE00ADD57F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F4018BB215679BE00ADD57F /* GRDB.framework */,
+				8F4018BD215679BE00ADD57F /* GRDBOSXTests.xctest */,
+				8F4018BF215679BE00ADD57F /* GRDBOSXPerformanceTests.xctest */,
+				8F4018C1215679BE00ADD57F /* GRDBOSXPerformanceComparisonTests.xctest */,
+				8F4018C3215679BE00ADD57F /* GRDBOSXCrashTests.xctest */,
+				8F4018C5215679BE00ADD57F /* GRDB.framework */,
+				8F4018C7215679BE00ADD57F /* GRDBiOSTests.xctest */,
+				8F4018C9215679BE00ADD57F /* GRDB.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F40166A2138DB69004F87DD /* National Parks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F4016962138DB6B004F87DD /* Build configuration list for PBXNativeTarget "National Parks" */;
+			buildPhases = (
+				8F4016672138DB69004F87DD /* Sources */,
+				8F4016682138DB69004F87DD /* Frameworks */,
+				8F4016692138DB69004F87DD /* Resources */,
+				8F4018D02156910900ADD57F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F4018CB215690F800ADD57F /* PBXTargetDependency */,
+				8F4018CF2156910800ADD57F /* PBXTargetDependency */,
+			);
+			name = "National Parks";
+			productName = "National Parks";
+			productReference = 8F40166B2138DB69004F87DD /* National Parks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F4016812138DB6B004F87DD /* National ParksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F4016992138DB6B004F87DD /* Build configuration list for PBXNativeTarget "National ParksTests" */;
+			buildPhases = (
+				8F40167E2138DB6B004F87DD /* Sources */,
+				8F40167F2138DB6B004F87DD /* Frameworks */,
+				8F4016802138DB6B004F87DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F4016842138DB6B004F87DD /* PBXTargetDependency */,
+			);
+			name = "National ParksTests";
+			productName = "National ParksTests";
+			productReference = 8F4016822138DB6B004F87DD /* National ParksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8F40168C2138DB6B004F87DD /* National ParksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F40169C2138DB6B004F87DD /* Build configuration list for PBXNativeTarget "National ParksUITests" */;
+			buildPhases = (
+				8F4016892138DB6B004F87DD /* Sources */,
+				8F40168A2138DB6B004F87DD /* Frameworks */,
+				8F40168B2138DB6B004F87DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F40168F2138DB6B004F87DD /* PBXTargetDependency */,
+			);
+			name = "National ParksUITests";
+			productName = "National ParksUITests";
+			productReference = 8F40168D2138DB6B004F87DD /* National ParksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F4016632138DB69004F87DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Oliver San Juan";
+				TargetAttributes = {
+					8F40166A2138DB69004F87DD = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					8F4016812138DB6B004F87DD = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8F40166A2138DB69004F87DD;
+					};
+					8F40168C2138DB6B004F87DD = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8F40166A2138DB69004F87DD;
+					};
+				};
+			};
+			buildConfigurationList = 8F4016662138DB69004F87DD /* Build configuration list for PBXProject "National Parks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F4016622138DB69004F87DD;
+			productRefGroup = 8F40166C2138DB69004F87DD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8F4018AF215679BE00ADD57F /* Products */;
+					ProjectRef = 8F4018AE215679BE00ADD57F /* GRDB.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8F40166A2138DB69004F87DD /* National Parks */,
+				8F4016812138DB6B004F87DD /* National ParksTests */,
+				8F40168C2138DB6B004F87DD /* National ParksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8F4018BB215679BE00ADD57F /* GRDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GRDB.framework;
+			remoteRef = 8F4018BA215679BE00ADD57F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F4018BD215679BE00ADD57F /* GRDBOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBOSXTests.xctest;
+			remoteRef = 8F4018BC215679BE00ADD57F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F4018BF215679BE00ADD57F /* GRDBOSXPerformanceTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBOSXPerformanceTests.xctest;
+			remoteRef = 8F4018BE215679BE00ADD57F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F4018C1215679BE00ADD57F /* GRDBOSXPerformanceComparisonTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBOSXPerformanceComparisonTests.xctest;
+			remoteRef = 8F4018C0215679BE00ADD57F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F4018C3215679BE00ADD57F /* GRDBOSXCrashTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBOSXCrashTests.xctest;
+			remoteRef = 8F4018C2215679BE00ADD57F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F4018C5215679BE00ADD57F /* GRDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GRDB.framework;
+			remoteRef = 8F4018C4215679BE00ADD57F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F4018C7215679BE00ADD57F /* GRDBiOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GRDBiOSTests.xctest;
+			remoteRef = 8F4018C6215679BE00ADD57F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F4018C9215679BE00ADD57F /* GRDB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GRDB.framework;
+			remoteRef = 8F4018C8215679BE00ADD57F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F4016692138DB69004F87DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F40167C2138DB6B004F87DD /* LaunchScreen.storyboard in Resources */,
+				8F4016792138DB6B004F87DD /* Assets.xcassets in Resources */,
+				8F4016742138DB69004F87DD /* Main.storyboard in Resources */,
+				8F1314142157D5C4006A05CB /* nationalparks.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F4016802138DB6B004F87DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F40168B2138DB6B004F87DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F4016672138DB69004F87DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F4016772138DB69004F87DD /* National_Parks.xcdatamodeld in Sources */,
+				8F4017FE2150958700ADD57F /* Stats.swift in Sources */,
+				8F4017FC214F2B6B00ADD57F /* Park.swift in Sources */,
+				8F4016712138DB69004F87DD /* ViewController.swift in Sources */,
+				8F13149D215B14D30009BB56 /* StatsController.swift in Sources */,
+				8F40166F2138DB69004F87DD /* AppDelegate.swift in Sources */,
+				8F4017FA214F298500ADD57F /* ParksController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F40167E2138DB6B004F87DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F4016872138DB6B004F87DD /* National_ParksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F4016892138DB6B004F87DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F4016922138DB6B004F87DD /* National_ParksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F4016842138DB6B004F87DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F40166A2138DB69004F87DD /* National Parks */;
+			targetProxy = 8F4016832138DB6B004F87DD /* PBXContainerItemProxy */;
+		};
+		8F40168F2138DB6B004F87DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F40166A2138DB69004F87DD /* National Parks */;
+			targetProxy = 8F40168E2138DB6B004F87DD /* PBXContainerItemProxy */;
+		};
+		8F4018CB215690F800ADD57F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GRDBiOS;
+			targetProxy = 8F4018CA215690F800ADD57F /* PBXContainerItemProxy */;
+		};
+		8F4018CF2156910800ADD57F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GRDBiOS;
+			targetProxy = 8F4018CE2156910800ADD57F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F4016722138DB69004F87DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F4016732138DB69004F87DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F40167A2138DB6B004F87DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F40167B2138DB6B004F87DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F4016942138DB6B004F87DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F4016952138DB6B004F87DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F4016972138DB6B004F87DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BKCJS4473;
+				INFOPLIST_FILE = "National Parks/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Self.National-Parks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F4016982138DB6B004F87DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8BKCJS4473;
+				INFOPLIST_FILE = "National Parks/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Self.National-Parks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F40169A2138DB6B004F87DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "National ParksTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Self.National-ParksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/National Parks.app/National Parks";
+			};
+			name = Debug;
+		};
+		8F40169B2138DB6B004F87DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "National ParksTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Self.National-ParksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/National Parks.app/National Parks";
+			};
+			name = Release;
+		};
+		8F40169D2138DB6B004F87DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "National ParksUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Self.National-ParksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "National Parks";
+			};
+			name = Debug;
+		};
+		8F40169E2138DB6B004F87DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "National ParksUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Self.National-ParksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "National Parks";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F4016662138DB69004F87DD /* Build configuration list for PBXProject "National Parks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F4016942138DB6B004F87DD /* Debug */,
+				8F4016952138DB6B004F87DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F4016962138DB6B004F87DD /* Build configuration list for PBXNativeTarget "National Parks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F4016972138DB6B004F87DD /* Debug */,
+				8F4016982138DB6B004F87DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F4016992138DB6B004F87DD /* Build configuration list for PBXNativeTarget "National ParksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F40169A2138DB6B004F87DD /* Debug */,
+				8F40169B2138DB6B004F87DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F40169C2138DB6B004F87DD /* Build configuration list for PBXNativeTarget "National ParksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F40169D2138DB6B004F87DD /* Debug */,
+				8F40169E2138DB6B004F87DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8F4016752138DB69004F87DD /* National_Parks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8F4016762138DB69004F87DD /* National_Parks.xcdatamodel */,
+			);
+			currentVersion = 8F4016762138DB69004F87DD /* National_Parks.xcdatamodel */;
+			path = National_Parks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8F4016632138DB69004F87DD /* Project object */;
+}
